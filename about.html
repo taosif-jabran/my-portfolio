@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Additional about page styling */
+        .about-content {
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .profile-photo {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .bio {
+            flex: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            .profile-photo {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>About Me</h1>
+            <p>Get to know the person behind the code</p>
+        </section>
+
+        <section class="about-content">
+            <!-- Add your image here -->
+            <img src="images/yourphoto.jpg" alt="[Taosif Jabran]" class="profile-photo">
+            
+            <div class="bio">
+                <h2>Hello, I'm Taosif Jabran</h2>
+                <p>I'm a passionate web developer with experience building modern, responsive websites. My journey in tech began when...</p>
+                
+                <h3>My Skills</h3>
+                <ul>
+                    <li>Web Development (HTML, CSS, JavaScript)</li>
+                    <li>UI/UX Design</li>
+                    <li>Problem Solving</li>
+                </ul>
+                
+                <a href="projects.html" class="btn">See My Work →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Portfolio. <a href="index.html">Back to home</a></p>
+    </footer>
+</body>
+</html>
